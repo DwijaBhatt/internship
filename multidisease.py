@@ -20,8 +20,8 @@ with st.sidebar:
                          
                          ['Diabetes Prediction','Heart Disease Prediction','Parkinsons Prediction'],
                          icons=['activity','heart','person'],
-                         ['Created by: '],[' -Dwija C Bhatt'],
                          default_index=0)
+    st.markdown("#### Created by : Dwija C Bhatt")
     
     #diabetes prediction page
 if(selected=='Diabetes Prediction'):
