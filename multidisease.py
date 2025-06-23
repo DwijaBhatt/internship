@@ -9,17 +9,18 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-diabetes_model=pickle.load(open('E:/dwija c bhatt/internship/diabetes_model.unknown','rb'))
+diabetes_model=pickle.load(open('diabetes_model.unknown','rb'))
 
-heart_disease=pickle.load(open('E:/dwija c bhatt/internship/Hear_model.unknown','rb'))
+heart_disease=pickle.load(open('Hear_model.unknown','rb'))
 
-parkinsons_model=pickle.load(open('E:/dwija c bhatt/internship/parkinson_model.sav.unknown','rb'))
+parkinsons_model=pickle.load(open('parkinson_model.sav.unknown','rb'))
 
 with st.sidebar:
     selected=option_menu('Multiple Disease Prediction System',
                          
                          ['Diabetes Prediction','Heart Disease Prediction','Parkinsons Prediction'],
                          icons=['activity','heart','person'],
+                         ['Created by: '],[' -Dwija C Bhatt'],
                          default_index=0)
     
     #diabetes prediction page
